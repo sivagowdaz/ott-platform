@@ -1,0 +1,81 @@
+.widgetSm {
+  display: block;
+  padding: 10px;
+}
+.topsec {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.widgetItem {
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: -1px 4px 11px 0px rgba(128, 128, 128, 0.75);
+  -webkit-box-shadow: -1px 4px 11px 0px rgba(128, 128, 128, 0.75);
+  -moz-box-shadow: -1px 4px 11px 0px rgba(128, 128, 128, 0.75);
+}
+
+.widgetItemUser {
+  padding: 20px;
+  width: 65%;
+  margin:0 auto;
+  box-shadow: -1px 4px 11px 0px rgba(128, 128, 128, 0.75);
+  -webkit-box-shadow: -1px 4px 11px 0px rgba(128, 128, 128, 0.75);
+  -moz-box-shadow: -1px 4px 11px 0px rgba(128, 128, 128, 0.75);
+}
+
+.widgetSmTitle {
+  font-size: 22px;
+  font-weight: 600;
+}
+.widgetSmImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.widgetSmList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.widgetSmItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.widgetSmUser {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.widgetSmUsername {
+  font-weight: 600;
+}
+.widgetSmPosition {
+  font-weight: 600;
+  font-size: 15px;
+  color: gray;
+}
+.widgetSmButton {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  padding: 7px 10px;
+  background-color: #eeeef7;
+  color: #555;
+  cursor: pointer;
+}
+
+.widgetSmIcon {
+  font-size: 16px !important;
+  margin-right: 5px;
+}
+
+.widgetSmUser_mod {
+  display: flex;
+  gap: 30px;
+}

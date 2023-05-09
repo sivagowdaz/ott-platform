@@ -1,0 +1,101 @@
+.login {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("http://mppmduse2pmpovwapp.azurewebsites.net/wp-content/uploads/2019/09/netflix-background-9.jpg");
+
+  .top {
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 50px;
+
+      .website_title {
+        height: 40px;
+        color: red;
+        font-size: 23px;
+        font-weight: 700;
+      }
+      .loginButton {
+        background-color: #d60606;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    form {
+      width: 300px;
+      height: 300px;
+      padding: 30px;
+      border-radius: 5px;
+      background-color: var(--main-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      h1 {
+        margin: 0 auto;
+      }
+
+      input {
+        border: none;
+        height: 40px;
+        background-color: gray;
+        color: white;
+        border-radius: 5px;
+        padding-left: 15px;
+        font-size: 18px;
+        cursor: pointer;
+
+        &::placeholder {
+          color: lightgray;
+        }
+      }
+      button {
+        font-size: 20px;
+        font-weight: 500px;
+        background-color: red;
+        color: white;
+        border: none;
+        height: 40px;
+        border-radius: 5px;
+      }
+
+      span {
+        color: gray;
+
+        b {
+          color: white;
+        }
+      }
+
+      small {
+        color: gray;
+        b {
+          color: white;
+        }
+      }
+    }
+  }
+}

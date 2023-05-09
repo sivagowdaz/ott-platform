@@ -58,8 +58,6 @@ const  refresh_token_generator = (user) => {
 
 const register_user = async(req, res) => {
     const { username, email, password } = req.body
-
-    console.log("dfjdfjkdf",username, email, password)
     
     try {
         const salt = await bcrypt.genSalt(10)
@@ -133,13 +131,13 @@ const get_refresh_token = async(req, res) => {
         new_access_token = access_token_generator({username,email})
         new_refresh_token = refresh_token_generator({username, email})
     } else {
-        res.status(400).json("please login again")
+        return res.status(400).json("please login again")
     }
     
     await pool.query("delete from refreshToken where refresh_token = $1", [refresh_token])
     await pool.query("insert into refreshToken (refresh_token) values($1)", [new_refresh_token])
 
-    res.json({access_token:new_access_token, refresh_token:new_refresh_token})
+    return res.json({access_token:new_access_token, refresh_token:new_refresh_token})
 
 }
 
@@ -179,6 +177,7 @@ const get_single_user = async(req, res) => {
     if (is_admin || email === sentEmail) {
         let required_user = await pool.query("select * from user_register where email = $1", [sentEmail])
         let user_profile = await pool.query("select * from userprofile where email = $1", [sentEmail])
+        
         console.log(user_profile.rows[0])
         resdata = [required_user.rows[0], user_profile.rows[0] ]
         return res.json(resdata)

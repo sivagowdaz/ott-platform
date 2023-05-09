@@ -1,0 +1,50 @@
+// .list {
+//   width: 100%;
+//   margin-top: 10px;
+
+//   .list-title {
+//     font-size: 20px;
+//     color: white;
+//     font-weight: 500;
+//     margin-left: 50px;
+//   }
+
+//   .wrapper {
+//     position: relative;
+//     .sliderArrow {
+//       color: white;
+//       background-color: rgb(44, 41, 41, 0.5);
+//       width: 50px;
+//       height: 100%;
+//       position: absolute;
+//       z-index: 99;
+//       top: 0;
+
+//       &.left {
+//         left: 0;
+//       }
+//       &.right {
+//         right: 0;
+//       }
+//     }
+//     .container {
+//       margin-top: 10px;
+//       margin-left: 50px;
+//       display: flex;
+//       width: max-content;
+//       transform: translateX(0px);
+//       transition: all 1s ease;
+//     }
+//   }
+// }
+
+.list {
+  padding: 5px;
+  background-color: rgba(35, 34, 34, 0.299);
+  color: white;
+  margin: 2px;
+}
+.content_image {
+  height:200px;
+  object-fit: cover;
+}

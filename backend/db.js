@@ -1,10 +1,12 @@
 const { Pool } = require('pg')
 
+// User your postgress credentials
+
 const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'dbms_mini',
-    password: 968690,
+    password: 'xxxxxx',
 })
 
 

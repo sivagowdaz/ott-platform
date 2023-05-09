@@ -1,0 +1,53 @@
+.search_page {
+    background-color: #0b0b0b;
+    color: white;
+    height: 90vh;
+    width: 100%;
+}
+.search_container {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_box {
+    margin-top: 20px;
+    font-size: 16px;
+    width: 750px;
+    height: 50px;
+    border:1px solid white;
+    color: white;
+    border-radius: 50px 0px 0px 50px;
+    background-color: rgba(56, 51, 51, 0.299)
+}
+.search_acce {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_button {
+    color: white;
+    margin-bottom: -20px;
+    font-size: 20px;
+    height: 53px;
+    font-weight: 600;
+    border:1px solid white;
+    border-radius: 0px 50px 50px 0px;
+    background-color: rgba(56, 51, 51, 0.299);
+}
+.search_result_container {
+    width: 100%;
+}
+.movie_result {
+    max-width: 900px;
+    margin: 10px auto;
+}
+.series_result {
+    max-width: 900px;
+    margin: 10px auto;
+
+}
+.serials_result {
+    max-width: 900px;
+    margin: 10px auto;
+}

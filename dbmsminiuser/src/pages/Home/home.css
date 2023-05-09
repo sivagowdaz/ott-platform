@@ -1,0 +1,31 @@
+.home {
+  background-color: #0b0b0b;
+  overflow: hidden;
+}
+.movies_list {
+  display: flex;
+  overflow: scroll;
+}
+.movies_list::-webkit-scrollbar {
+  display: none;
+}
+.seires_list {
+  display: flex;
+  overflow: scroll;
+}  
+.seires_list::-webkit-scrollbar {
+  display: none;
+}
+.serials_list {
+  display: flex;
+  overflow: scroll;
+}
+.serials_list::-webkit-scrollbar {
+  display: none;
+}
+.list_title {
+  color: white;
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
